@@ -1,4 +1,5 @@
 
+
 import 'dart:convert';
 
 List<CoinModel> coinModelFromJson(String str) => List<CoinModel>.from(json.decode(str).map((x) => CoinModel.fromJson(x)));
@@ -33,7 +34,7 @@ class CoinModel {
     // dynamic roi;
     // DateTime lastUpdated;
     SparklineIn7D sparklineIn7D;
-
+  
     CoinModel({
         required this.id,
         required this.symbol,
@@ -124,6 +125,8 @@ class CoinModel {
         "sparkline_in_7d": sparklineIn7D.toJson(),
     };
 }
+
+
 
 class SparklineIn7D {
     List<double> price;

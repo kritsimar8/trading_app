@@ -4,13 +4,15 @@ import 'package:multithreaded_trading_app/selectCoin.dart';
 
 class Item2 extends StatelessWidget {
   var item;
-   Item2({this.item});
+  var key;
+   Item2({this.item,this.key});
 
   @override
   Widget build(BuildContext context) {
        double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
     return  Padding(
+      key: key,
       padding:  EdgeInsets.symmetric(horizontal: w*0.03,vertical: h*0.009),
       child: GestureDetector(
         onTap: () {

@@ -88,7 +88,7 @@ class Item extends StatelessWidget {
                             color: Colors.grey
                           ),
                         ),
-                        SizedBox(width: w*0.03,),
+                        SizedBox(width: w*0.02,),
                         Text(item.marketCapChangePercentage24H.toStringAsFixed(3),
                         style: TextStyle(
                           fontSize: 10,
